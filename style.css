@@ -1,0 +1,1252 @@
+/*
+Theme Name: Bad Jimmy's
+Author: Brianna Karle
+Author URI: http://www.briannakarle.com
+Description: The Bad Jimmy's Theme is the 2016 theme for Bad Jimmy's Brewing Co.
+Version: 1.0
+License: Apache License, Version 2.0
+License URI: http://www.apache.org/licenses/LICENSE-2.0
+Tags: black, brown, red, white, yellow, wood, metal, brewery, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: badjimmys
+*/
+		@font-face {
+			font-family: 'piratekeg';
+			src: url('../fonts/piratekeg.ttf') format('truetype');
+		}
+
+		body {
+			width:100%;
+			background-color: #635E5E;
+			background-image: url("../images/metalbackground.jpg");
+			background-attachment:fixed;
+			font-family: arial, san-serif;
+			font-size:100%;
+			margin: 0px auto;
+			
+		}
+		
+		#middle {
+			background-color:#fff;   
+			margin:0 auto; 	
+			width:80%;
+			padding-bottom: 1.25em;
+			
+		}
+		
+		.clear {
+		    clear:both;	
+		}
+		
+		.columnA {
+			box-sizing: border-box;
+			float: left;
+			margin-top: 0;
+			padding-top: 2%;
+			width: 75%;
+		}
+		
+		aside {
+			background-color: #000;
+			box-sizing: border-box;
+			color: #fff;
+			float: right;
+			margin-right: 2em;
+			margin-top: 3.5%;
+			padding: 1.25em;
+			width: 20%;
+		}
+				
+/****HEADER****/
+    header {
+        background-image: url("../images/wood.jpg");
+	    background-attachment: fixed;
+	}
+    #smallHeaderPortion {
+		width:80%;
+		position:relative;
+		margin:0 auto;
+		height: 180px;
+	}
+	
+	#mainLogo {
+	    position:absolute;
+		top:0em;
+		left:0em;
+		width:220;
+		height:258;
+		z-index:1;
+			
+	}
+	
+	header .socialMedia {
+	    position:absolute;
+		right: 0em;
+		top: 6em;
+	}
+	
+	.socialMedia a {
+	    display:inline-block;
+		margin:.3em;
+		
+	}
+	
+	.socialMedia a:link {
+	    color: #fff;	
+	}
+	
+	header .socialMedia a {
+	    font-size:2.5em;
+		margin:0;	
+	}
+	header .socialMedia a:link {
+	    color:#000;	
+	}
+	
+	header .socialMedia a:visited {
+	    /*color:#EDA624;*/
+		color: #bbb ;	
+	}
+	
+	header .socialMedia a:hover {
+	    color:#EDA624;	
+	}
+	
+	header .search {
+	    position:absolute;
+        right: 0em;
+		top: 9em;
+	}	
+	
+	input {
+	    border:1px solid black;	
+	}
+	
+	.search button {
+	    border:none;
+		font-size:1em;
+		background:transparent;	
+	}
+/****GENERAL TEXT/LINK STYLES****/			
+		h1, h2, h3, h4 {
+			padding-top:.5em;
+			margin-bottom: .25em;
+			font-family: 'Open Sans', sans-serif;
+			font-weight:normal;	
+			letter-spacong:1px;
+		}	
+		h2 {
+		   font-weight: bold;
+		   font-size: 1.31em;
+		   line-height:1.965em;	
+		}
+		
+		a {
+		    font-family: 'Open Sans', sans-serif;
+		}
+		
+		a:link {
+			color:#fff;	
+		}
+		
+		a:visited {
+		    /*color:#EDA624;*/
+			color: #bbb;	
+		}
+		
+		a:hover {
+		     color:#FF0004;
+		}
+		
+		.subText {
+			color: #666;
+			font-size: 1em;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		
+		.centerText {
+		    text-align:center;	
+		}
+/****SPOTLIGHT****/
+		
+	#spotlight {
+		box-sizing: border-box;
+		margin: 0 2%;
+		padding-top: 2%;
+	}
+		
+
+	#spotlightRelative {
+		margin: 0 auto;
+		position: relative;
+		width: 96%;
+	}
+	
+	#spotlightRelativeGateway {
+		margin: 1% auto;
+		position: relative;
+		width: 96%;
+	}
+	
+	#spotlightGateway h1, #spotlightDestination h1 {
+		background-color: rgba(64, 51, 48, 0.75);
+		bottom: -4px;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 1.75em;
+		height: 2em;
+		line-height: 2em;
+		padding: 5px;
+		position: absolute;
+		text-transform: uppercase;
+		width: 100%;
+	}
+	
+	#spotlightMain {
+	   padding:0;	
+	}
+	
+
+	#spotlightText {
+		background-color: rgba(64, 51, 48, 0.75);
+		bottom: 0;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 1.3125em;
+		line-height: 1.8em;
+		padding: 0 3% 3%;
+		position: absolute;
+		right:0;
+		top: 0;
+		width: 40%;
+	}
+	
+	#spotlightText p {
+	    padding-bottom:.625em;	
+	}
+	
+	
+	#spotlightMain, .ctaGroup {
+		/*background-color: #191919;*/
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+	
+/****CTA STYLES****/	
+	.ctaGroup {
+		box-sizing: border-box;
+		margin: 2% auto;
+		padding: 0.5%;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.cta {
+	    width:30.6%;
+		max-width:300px;
+		height:100%;	
+		margin:1%;
+		display:inline-block;
+		position:relative;
+		box-sizing:border-box;
+	}
+
+	.cta h2 {
+	    text-transform: uppercase;	
+	}
+	.cta img {
+	    width:100%;
+		display:inline-block;	
+	}
+	
+	.ctaText {
+	    background-color: rgba(64, 51, 48, 0.75);
+		position:absolute;
+		bottom:0px;
+	    right:0px;
+		left:0px;
+		width:100%;
+		color: #fff;
+		height:100%;
+		min-height:150px;
+		display:block;
+	}
+	
+	
+	.ctaText p {
+		font-size: 1em;
+		line-height: 1.5em;
+		padding-top:0px;
+		padding-bottom:.625em;
+	}
+	
+	#subText {
+		font-size: .875em;
+		line-height: 1.31em;
+		padding-top:0px;
+		padding-bottom:.625em;
+	}
+	
+	#ctaTop {
+        background-color: #191919;
+        color: #fff;
+        font-size: 1em;
+        line-height: 1.5em;
+        margin: 0 auto;
+        text-align: center;
+    }
+	
+    .cta a {
+		background: #191919 none repeat scroll 0 0;
+		font-size: 0.85em;
+		padding: 7px;
+		text-decoration: none;
+		text-transform: uppercase;
+}
+	
+	/****NEWS****/
+	#news {
+		margin: 0 auto;
+		width: 92%;
+	}
+	
+	#news h1 {
+		background-color: #191919;
+		color: #fff;
+		font-family: 'piratekeg', arial, sans-serif;
+		font-size: 1.125em;
+		font-weight: normal;
+		letter-spacing: 1.5px;
+		line-height: 2em;
+		padding-left: 0.5em;
+		padding-top: 0;
+		text-transform: uppercase;
+	}
+	
+	#news h2 {
+		font-size: 1.125em;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	
+	#news .date {
+		border-bottom: 1px solid #c7b8b4;
+		color: #9f8d89;
+		font-size: 0.875em;
+		margin: 0;
+		padding-bottom: 5px;
+	}
+	
+	.newsText p {
+		font-size: 1em;
+		line-height: 1.5em;	
+	}
+	
+	.newsText img {
+		float: left;
+		height: 9.375em;
+		padding: 5px;
+		width: 9.375em;
+	}
+	
+	.newsReadMore {
+	    background-color: #403330;	
+		color: #fff;
+		text-align:right;
+		padding:.25em;
+		font-size: 1em;
+		line-height:1.5em;
+		clear:both;
+	}
+	
+	.newsReadMore a:link{
+	    color: #fff;
+		text-decoration:none;
+	}
+	
+	.newsReadMore a:visited {
+	    /*color: #eda624;*/
+		color: #bbb ;
+	}
+	.newsReadMore a:hover {
+	    color: #eda624;
+		text-decoration:underline;
+	}
+	
+	.moreNews {
+	    text-align:right;
+		margin-top:1em;
+		text-transform:uppercase;	
+	}
+	
+	/****GATEWAY****/
+	.banner {
+	    width:100%;	
+	}
+	
+	.columnA #spotlight {
+		box-sizing: border-box;
+		margin: 0 2%;
+		padding-top: 2%;	
+	}
+	
+
+	
+	.gatewayOption {
+	    background:#403330;
+		color:#fff;	
+		margin-top: 1em;
+	}
+	
+	.gatewayOption h3 {
+	    text-transform:uppercase;	
+	}
+	.gatewayOptionText {
+		box-sizing: border-box;
+		float: right;
+		height: 100%;
+		padding: 0 1em;
+		width: 65%;
+	}
+	
+	
+	
+	.gatewayOption img {
+	    float:left;	
+	}
+	
+	.options {
+		box-sizing: border-box;
+		margin-left: 3.9%;
+		margin-right: 3%;
+		width: 92.3%;
+		background-color:#fff;
+	}
+		
+	.options h2{
+		background-color: #191919;
+		color: #fff;
+		font-size: 1.125em;
+		font-weight: normal;
+		letter-spacing: 1.5px;
+		line-height: 2em;
+		padding-left: 0.5em;
+		padding-top: 0;
+		text-transform: uppercase;
+		margin-top:1.5em;
+	}
+    .plainOptionLink {
+	    text-decoration:none;	
+	}
+	.options .more {
+		text-transform:uppercase;
+		float:right;
+	}  
+	
+	.gatewayOptionText a:link {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.gatewayOptionText a:visited {
+		/*color: #EDA624;*/
+		color: #bbb;
+		text-decoration: none;
+	}
+
+	.gatewayOptionText a:hover {
+		color: #EDA624;
+		text-decoration: none;
+	}
+	
+	.options .more:link {
+		color:#EDA624;
+		text-decoration:none;
+		
+	}
+	
+	.options .more:visited {
+		color:#FF0004;
+		text-decoration:none;
+	}
+	
+	.options .more:hover {
+		text-decoration:underline;
+	}
+	
+	.plainOptions p a:link {
+		color:#EDA624;
+		text-decoration:none;
+	}
+	
+	.plainOptions p a:visited {
+		/*color:#FF0004;*/
+		color: #bbb ;
+	}
+	
+	.plainOptions p a:hover {
+		text-decoration:underline;
+	}
+	
+	.plainOptions a:link {
+	    text-decoration:none;	
+	}
+	
+	
+	
+	/****CONTACT****/
+	.contactBanner {
+	    width:100%;	
+	}
+	.embed-container { 
+		position: relative; 
+		padding-bottom: 56.25%; 
+		height: 0; 
+		overflow: hidden; 
+		max-width: 100%; 
+		clear:both;
+		} 
+
+	.embed-container iframe, .embed-container object, .embed-container embed { 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+		}
+	.plainOptions .address {
+	    float: left;	
+		width: 45%;
+        margin: 0 2.5%;
+	}
+    .plainOptions .hours {
+		float: right;
+		width: 45%;
+		margin: 0 2.5%;
+	}
+		
+    /****BEER****/
+	
+	.beerOption {
+		border: 1px solid #eee;
+		display: inline-block;
+		margin: 1.75%;
+		vertical-align: top;
+		width: 29%;
+	}
+	.beerOption img {
+	    width:100%;
+		background:#eee;	
+	}
+	
+	
+	.stats {
+		color: #bbb;
+		font-size: 1em;
+		line-height: 1.5em;
+    }
+	
+	.beerOptionText {
+		background-color: #403330;
+		box-sizing: border-box;
+		color: #fff;
+		height: 350px;
+		padding: 5px;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.beerOptionText h3 {
+	    text-transform:uppercase;	
+	}
+	/*****ASIDE****/
+	
+	aside li {
+		text-decoration:none;
+	}
+	
+	aside .mainLink {
+		display: block;
+		font-size: 1.125em;
+		font-weight: bold;
+		line-height: 1.6875em;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-top:1em;
+	}
+	
+	aside .subAsideLink {
+		display: block;
+		font-size: 1em;
+		line-height: 1.5em;
+		text-decoration: none;
+	}
+	aside input {
+	    width: 65%;	
+	}
+	.asideNewsletterButton {
+	   border:none;
+	   background-color:transparent;
+	   color:white;
+	   font-size:1em;
+	   display:inline;	
+	}
+	
+	#asideTaproomCta, #asideNewsletter, #asideSocial {
+	    margin-top:2.5em;	
+	}
+	
+	#asideSocial {
+	    clear:both;	
+	}
+	
+	#asideSocial a {
+	    display:block;
+		text-decoration:none;	
+	}
+	/****FOOTER****/
+	footer {
+		clear:both;
+	    background-color:#191919;	
+		color: #fff;
+		margin: -1em auto;
+		font-size:90%;
+	}
+	
+	.footerContainer {
+	    width:80%;
+		margin: 0 auto;	
+	}
+	
+	footer h2 {
+		font-size: 1.35em;
+		font-weight: normal;
+		padding: 1em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	
+	footer h3 {
+	    text-transform:uppercase;
+		font-weight:normal;	
+	}
+	
+	footer ul {
+	    margin: 0;
+		padding:0;	
+	}
+	footer li {
+	    list-style:none;	
+	}
+	
+	
+	footer a:link {
+	    text-decoration:none;
+		color:#fff;	
+	}
+	
+	footer a:hover, footer a:visited {
+		/*color:#EDA624;*/
+	    color: #bbb;;
+	}
+	
+	footer a:hover {
+	    text-decoration:none;	
+	}
+	
+	footer .socialMedia .fa {
+	    font-size:1.875em;
+	}
+	
+	footer .fa:hover{
+		color:#EDA624;
+	}
+	.footerContact {
+	    border-right: 1px solid #333;
+		float:left;	
+		width: 42%;
+	}
+	
+	.footerContact button {
+		background-color: #191919;
+		border: medium none;
+		height: 2em;
+	}
+	
+	.footerContact button .fa {
+		color: #fff;
+		font-size: 1.35em;
+		line-height: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.aboutShop, .beerEvents {
+		float: left;
+		margin-left: 4%;
+		width: 15%;
+	}
+	
+	.taproomContact {
+		border: medium none;
+		float: right;
+		margin-left: 4%;
+		width: 15%;
+	}
+	
+	.footerCopy {
+		clear: both;
+		padding: 1em;
+		text-align: center;
+	}
+	@media all and (min-width:1500px){
+    #spotlightText {
+		bottom: 0;
+		font-size: 1.75em;
+		line-height: 2.25em;
+		padding: 2% 4%;
+		top: 0;
+		width: 40%;
+	}	
+	}
+    @media all and (min-width:1200px) and (max-width:1500px) {
+	#spotlightText {
+		bottom: 0;
+		font-size: 1.65em;
+		line-height: 1.8em;
+		padding: 0 3%;
+		right: 0;
+		top: 0;
+		width: 40%;
+	}
+	}
+	@media all and (min-width:953px) and (max-width:1199px) {
+	h2 {
+		font-size: 1.125em;
+		line-height: 1.6875em;
+	}
+	.ctaText p {
+		line-height: 1.5em;
+		padding-bottom: 0;
+	}
+	
+	.gatewayOptionText {
+		box-sizing: border-box;
+		float: right;
+		font-size: 0.85em;
+		height: 100%;
+		padding: 0 1em;
+		width: 55%;
+	}
+	
+    .beerOption {
+	    margin:1%;	
+	}
+	}
+	
+	@media all and (min-width:800px) and (max-width:952px) {
+	.columnA {
+	    float:none;
+		width:100%;	
+	}
+	
+	aside {
+	    display:none;	
+	}
+	
+	.cta3 {
+	    display:none;		
+	}
+	
+	#spotlightText {
+		font-size: 1.1em;
+		line-height: 1.6em;
+		padding: 0 3% 3%;
+	}
+	#smallHeaderPortion {
+        text-align: center;
+    }
+	#mainLogo {
+		width: 150px;
+		position: relative;
+	}
+	
+	.cta {
+		margin: 2%;
+		width: 44%;
+		
+	}	
+	
+	.cta h2 {
+		font-size: 1.3125em;
+		line-height: 1.96875em;
+	}	
+	
+	.ctaText p {
+		font-size: 1.125em;
+		line-height: 1.5em;
+		padding: 0.625em;
+		padding-bottom: 0;
+	}
+	
+	.gatewayOptionText {
+		box-sizing: border-box;
+		float: right;
+		font-size: 0.85em;
+		height: 100%;
+		padding: 0 1em;
+		width: 55%;
+	}
+	
+	.beerOption {
+	    margin:1%;	
+	}
+	}
+	
+	@media all and (min-width:600px) and (max-width:799px) {
+	.columnA {
+	    float:none;
+		width:100%;	
+	}
+	
+	aside {
+	    display:none;
+	}
+	
+	#middle {
+	    width:100%;	
+	}
+	
+	#news {
+		margin: 0px auto;
+		width: 92%;
+		background-color: rgb(255, 255, 255);
+		padding: 10px;
+	}
+		
+	#smallHeaderPortion {
+        text-align: center;
+    }
+	#mainLogo {
+		width: 150px;
+		position: relative;
+	}
+	header .socialMedia {
+		right: -3em;
+		top: 6.5em;
+	}
+	
+	header .socialMedia a {
+		font-size: 2em;
+		margin: .1em;
+	}
+
+	header .search {
+		right: -3em;
+		top: 9em;
+	}
+	
+	#spotlightText {
+		font-size: 1.125em;
+		line-height: 1.5em;
+		padding: 0 3% 3%;
+	}	
+	
+	.cta {
+		margin: 2%;
+		width: 44%;
+	}	
+	.cta3 {
+	    display:none;		
+	}
+	
+	.cta h2 {
+		font-size: 1.3125em;
+		line-height: 1.96875em;
+	}	
+	.ctaText p {
+		font-size: 1em;
+		line-height: 1.5em;
+		padding: 0.625em;
+	}
+	
+	.aboutShop {
+	    float: left;
+		margin-left: 4%;
+		width: 15%;	
+	}
+	
+	.beerEvents {
+		float: left;
+		margin-left: 4%;
+		width: 15%;
+	}
+	
+	.taproomContact {
+		border: medium none;
+		float: right;
+		margin-left: 4%;
+		width: 15%;
+	}
+	
+	.footerCopy {
+		clear: both;
+		padding: 1em;
+		text-align: center;
+	}
+	
+	.beerOption {
+	    margin:1%;	
+	}
+	
+	}
+	 @media all and (min-width:500px) and (max-width:700px) {
+	.gatewayOption img {
+		float: left;
+		margin: 0;
+		padding: 1em 1em 0;
+	}
+	
+	.beerOption {
+	    margin:1%;	
+	}
+	 }
+	@media all and (max-width:700px) {
+	.gatewayOptionText {
+		float: none;
+		height: 100%;
+		padding: 0.5em 1em;
+		width: 100%;
+	}
+	
+	aside {
+	    display:none;	
+	}
+	
+	}
+	@media all and (max-width:599px) {
+    .columnA {
+	    float:none;
+		width:100%;	
+	}
+	
+	#middle {
+	    width:100%;	
+		background-color: #191919;
+	}
+	
+	#news {
+		margin: 0px auto;
+		width: 92%;
+		background-color: rgb(255, 255, 255);
+		padding: 10px;
+	}
+	#smallHeaderPortion {
+        text-align: center;
+    }
+	
+	#mainLogo {
+		width: 150px;
+		position: relative;
+	}
+	
+	header .socialMedia {
+		right: -2em;
+		top: 0;
+	}
+	
+	header .socialMedia a {
+		font-size: 2em;
+		margin: 0.1em;
+	}
+	
+	header .search {
+	    display:none;	
+	}
+	
+	#spotlight {
+		box-sizing: border-box;
+		padding: 0;
+	}
+	
+	#spotlightRelative {
+		box-sizing: border-box;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	#spotlightMain, .ctaGroup {
+		width: 100%;
+	}
+	#spotlightMain {
+		padding: 0;
+	}
+	
+	#spotlightText {
+		font-size: 1.5em;
+		height: 100%;
+		line-height: 1.65em;
+		padding: 2.5%;
+		width: 100%;
+		margin:0;
+	}
+	
+
+	}
+	@media all and (min-width:451px) and (max-width:599px) {
+	.columnA {
+	    float:none;
+		width:100%;	
+	}
+	
+	aside {
+	    float:none;
+		width:100%;	
+	}
+	    .ctaGroup {
+		    background-color:#191919;
+			margin: 0 auto;	
+		}
+		
+		.cta {
+			display: block;
+			float: none;
+			margin: 1em auto;
+			width: 100%;
+		}
+		.cta3 {
+		   display:none;	
+		}
+		
+		.cta h2 {
+			font-size: 1.125em;
+			line-height: 1.6875em;
+		}
+		
+		.ctaText p {
+			font-size: 0.875em;
+			line-height: 1.3125em;
+			padding: 0.5em;
+			padding-bottom: 0;
+		}
+		
+		#subText {
+			font-size: 0.75em;
+			line-height: 1.2em;
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+	}
+	@media all and (max-width:500px) {
+	#middle {
+	    padding-bottom:0;	
+	}
+	
+	.columnA {
+	    float:none;
+		width:100%;	
+	}
+	
+	aside {
+	    float:none;
+		width:100%;	
+	}	
+	.footer2 {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.footerContact {
+		border-right: medium none;
+		float: none;
+		padding-bottom: 1.5em;
+		text-align: center;
+		width: 100%;
+	}
+	
+	#spotlightGateway h1, #spotlightDestination h1 {
+	    font-size:1.5em;
+		letter-spacing:0px;	
+	}
+	.aboutShop {
+		float: left;
+		margin-left: 0;
+        margin-right: 12%;
+		width: 15%;
+	}
+	.beerEvents {
+		float: left;
+		margin-left: 7%;
+		margin-right: 7%;
+		width: 15%;
+	}
+	.footerBeer {
+	    float:none;
+		margin-right:5%;
+		margin-left:5%;	
+	}
+	.footerEvents {
+	    float:none;
+		margin-right:5%;
+		margin-left:5%;	
+	}
+	.taproomContact {
+		border: medium none;
+		float: right;
+		margin-left: 5%;
+		margin-right: 15%;
+		width: 15%;
+	}
+	.footerOther {
+	    width:90%;
+		margin:auto;	
+	}
+	
+	.options {
+	    width:100%;
+		margin:0;	
+	}
+	
+	
+	.options h2 {
+	    margin:0;	
+	}
+	.gatewayOptions {
+		margin: 0 auto;
+		width: 100%;
+		background-image: url("../images/metalbackground.jpg");
+	}
+	
+	.gatewayOption {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+	}
+	.gatewayOption img {
+		float: none;
+		width:100%;
+	}
+	.gatewayOptionText {
+		float: none;
+		padding: 5px 10px;
+        width: 100%;
+	}
+	
+	.plainOptions {
+	    background:#fff;	
+		padding-bottom: 1em;
+	}
+	
+	.plainOptions p{
+	    padding: 0 5px 0 5px;	
+	}
+	
+	.blurb {
+	    padding:5px;	
+	}
+	.beerOption {
+	    display:block;	
+		width:95%;
+		margin:1% auto;
+	}
+	
+	.beerOption img {
+		display:none;
+	}
+	
+	.beerOptionText {
+	    height:250px;	
+	}
+	
+	.limitedReleaseBeers h2, .yearRoundBeers h2, .beersOnTap h2 {
+	    display:none;	
+	}
+	
+	form {
+	    padding:5px;	
+	}
+	
+	#Name, #Email, #partSize {
+	    width:98%;	
+	}
+	
+	.plainOptions .hours {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		width: 90%;
+	}
+	.plainOptions .address {
+			float: none;
+			margin: 0 auto;
+			text-align: center;
+			width: 90%;
+			border-bottom: 1px solid #ddd;
+	}
+	
+	}
+	@media all and (min-width:371px) and (max-width:450px) {
+	aside {
+	    float:none;
+		width:100%;	
+	}
+	
+	.columnA {
+		float: none;
+		width:100%;
+	}
+		
+	#spotlightText {
+		font-size: 1.25em;
+		height: 100%;
+		line-height: 1.65em;
+		margin: 0;
+		padding: 0 1.75% 1.75%;
+		width: 100%;
+	}
+	
+	#ctaTop {
+	    font-size: .75em;
+			
+	}
+	.ctaGroup {
+	    background-color: #191919;
+		margin:0 auto;	
+	}
+	.cta {
+		display: block;
+		float: none;
+		margin: 1em auto;
+		width: 100%;
+	}
+	
+	}
+	@media all and (max-width:370px) {
+	#spotlightText {
+		font-size: 1.125em;
+		height: 100%;
+		line-height: 1.5em;
+		margin: 0;
+		padding: 0 1.75% 1.75%;
+		width: 100%;
+	}
+	#ctaTop {
+	    display:none;	
+	}
+	.ctaGroup {
+	    background-color: #191919;	
+	}
+	.cta {
+		display: block;
+		float: none;
+		margin: 1em auto;
+		width: 100%;
+	}
+	
+	.ctaGroup {
+	    margin:0 auto;	
+	}
+	
+	}
