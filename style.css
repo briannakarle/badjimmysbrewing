@@ -9,56 +9,56 @@ License URI: http://www.apache.org/licenses/LICENSE-2.0
 Tags: black, brown, red, white, yellow, wood, metal, brewery, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
 Text Domain: badjimmys
 */
-		@font-face {
-			font-family: 'piratekeg';
-			src: url('../fonts/piratekeg.ttf') format('truetype');
-		}
+	@font-face {
+		font-family: 'piratekeg';
+		src: url('/fonts/piratekeg.ttf') format('truetype');
+	}
 
-		body {
-			width:100%;
-			background-color: #635E5E;
-			background-image: url("../images/metalbackground.jpg");
-			background-attachment:fixed;
-			font-family: arial, san-serif;
-			font-size:100%;
-			margin: 0px auto;
+	body {
+		width:100%;
+		background-color: #635E5E;
+		background-image: url("/images/metalbackground.jpg");
+		background-attachment:fixed;
+		font-family: arial, san-serif;
+		font-size:100%;
+		margin: 0px auto;
+		
+	}
+	
+	#middle {
+		background-color:#fff;   
+		margin:0 auto; 	
+		width:80%;
+		padding-bottom: 1.25em;
+		
+	}
+	
+	.clear {
+		clear:both;	
+	}
+	
+	.columnA {
+		box-sizing: border-box;
+		float: left;
+		margin-top: 0;
+		padding-top: 2%;
+		width: 75%;
+	}
+	
+	aside {
+		background-color: #000;
+		box-sizing: border-box;
+		color: #fff;
+		float: right;
+		margin-right: 2em;
+		margin-top: 3.5%;
+		padding: 1.25em;
+		width: 20%;
+	}
 			
-		}
-		
-		#middle {
-			background-color:#fff;   
-			margin:0 auto; 	
-			width:80%;
-			padding-bottom: 1.25em;
-			
-		}
-		
-		.clear {
-		    clear:both;	
-		}
-		
-		.columnA {
-			box-sizing: border-box;
-			float: left;
-			margin-top: 0;
-			padding-top: 2%;
-			width: 75%;
-		}
-		
-		aside {
-			background-color: #000;
-			box-sizing: border-box;
-			color: #fff;
-			float: right;
-			margin-right: 2em;
-			margin-top: 3.5%;
-			padding: 1.25em;
-			width: 20%;
-		}
-				
 /****HEADER****/
     header {
-        background-image: url("../images/wood.jpg");
+        background-image: url("/images/wood.jpg");
 	    background-attachment: fixed;
 	}
     #smallHeaderPortion {
@@ -127,46 +127,57 @@ Text Domain: badjimmys
 		background:transparent;	
 	}
 /****GENERAL TEXT/LINK STYLES****/			
-		h1, h2, h3, h4 {
-			padding-top:.5em;
-			margin-bottom: .25em;
-			font-family: 'Open Sans', sans-serif;
-			font-weight:normal;	
-			letter-spacong:1px;
-		}	
-		h2 {
-		   font-weight: bold;
-		   font-size: 1.31em;
-		   line-height:1.965em;	
-		}
+	h1, h2, h3, h4 {
+		padding-top:.5em;
+		margin-bottom: .25em;
+		font-family: 'Open Sans', sans-serif;
+		font-weight:normal;	
+		letter-spacong:1px;
+	}	
+	h2 {
+	   font-weight: bold;
+	   font-size: 1.31em;
+	   line-height:1.965em;	
+	}
+	
+	a {
+		font-family: 'Open Sans', sans-serif;
+	}
+	
+	a:link {
+		color:#fff;	
+	}
+	
+	a:visited {
+		/*color:#EDA624;*/
+		color: #bbb;	
+	}
 		
-		a {
-		    font-family: 'Open Sans', sans-serif;
-		}
-		
-		a:link {
-			color:#fff;	
-		}
-		
-		a:visited {
-		    /*color:#EDA624;*/
-			color: #bbb;	
-		}
-		
-		a:hover {
-		     color:#FF0004;
-		}
-		
-		.subText {
-			color: #666;
-			font-size: 1em;
-			text-align: center;
-			text-transform: uppercase;
-		}
-		
-		.centerText {
-		    text-align:center;	
-		}
+	a:hover {
+		 color:#FF0004;
+	}
+	
+	.subText {
+		color: #666;
+		font-size: 1em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	.centerText {
+		text-align:center;	
+	}
+/****WORDPRESS STYLES****/
+	.alignright {
+		float:right;	
+		margin: 0 20px 5px 0;
+	}
+	
+	.alignleft {
+		float:left;	
+		margin: 0 0 5px 20px;
+	}
+
 /****SPOTLIGHT****/
 		
 	#spotlight {
@@ -328,6 +339,14 @@ Text Domain: badjimmys
 		font-size: 1.125em;
 		font-weight: normal;
 		text-transform: uppercase;
+	}
+	
+	#news h2 a:link {
+	    color: #191919;
+	}
+	
+	#news h2 a:hover {
+		     color:#FF0004;
 	}
 	
 	#news .date {
@@ -825,6 +844,7 @@ Text Domain: badjimmys
 		background-color: rgb(255, 255, 255);
 		padding: 10px;
 	}
+	
 		
 	#smallHeaderPortion {
         text-align: center;

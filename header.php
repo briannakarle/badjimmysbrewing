@@ -9,6 +9,7 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic|Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>navstyles.css">
+<link rel="stylesheet" type="text/css" href="navstyles.css">
 <script src="<?php bloginfo('template_directory'); ?>scripts/navscript.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 <!-- START WP HEAD -->
@@ -21,7 +22,7 @@
         
         <div id="smallHeaderPortion">
             <div id="logo">
-                <a href="index.php"><img id="mainLogo" src="<?php bloginfo('template_directory'); ?>/images/badjimmyslogo.png" alt="Bad Jimmy's Logo"/></a>
+                <a href="<?php get_settings('home'); ?>"><img id="mainLogo" src="<?php bloginfo('template_directory'); ?>/images/badjimmyslogo.png" alt="Bad Jimmy's Logo"/></a>
             </div>
             <div class="socialMedia">
                 <a href="https://www.facebook.com/pages/Bad-Jimmys-Brewing-Co/200605819975291"><i class="fa fa-facebook-square"></i></a>
