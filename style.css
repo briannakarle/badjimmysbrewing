@@ -55,6 +55,11 @@ Text Domain: badjimmys
 		padding: 1.25em;
 		width: 20%;
 	}
+	
+	small {
+		display: block;
+		/*padding-bottom: 5px;*/
+	}
 			
 /****HEADER****/
     header {
@@ -350,11 +355,12 @@ Text Domain: badjimmys
 	}
 	
 	#news .date {
-		border-bottom: 1px solid #c7b8b4;
+		/*border-bottom: 1px solid #c7b8b4;*/
 		color: #9f8d89;
 		font-size: 0.875em;
 		margin: 0;
-		padding-bottom: 5px;
+		/*padding-bottom: 5px;*/
+		margin-bottom:10px;
 	}
 	
 	.newsText p {
@@ -435,6 +441,10 @@ Text Domain: badjimmys
 	    float:left;	
 	}
 	
+	.columnA img.attachment-thumbnail, .columnA img.size-thumbnail {
+	    float:left;
+		padding: 0px 20px 10px 0px;	
+	}
 	.options {
 		box-sizing: border-box;
 		margin-left: 3.9%;

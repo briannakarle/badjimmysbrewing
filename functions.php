@@ -12,7 +12,16 @@ Tags: black, brown, red, white, yellow, wood, metal, brewery, one-column, two-co
 Text Domain: badjimmys
 */
 
+//register menu
 register_nav_menus(array(
 'main-menu' => _( 'Main' ),
 ));
+//
+
+
+//make thumbnails *Featured Image*
+add_theme_support('post-thumbnails');
+//
+
+
 ?>
