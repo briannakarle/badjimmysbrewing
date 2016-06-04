@@ -19,9 +19,49 @@ register_nav_menus(array(
 //
 
 
+//register sidebars
+register_sidebars();
+//
+
 //make thumbnails *Featured Image*
 add_theme_support('post-thumbnails');
 //
 
+//subnavigation
 
+function my_subnavigation() {
+	
+	global $post;
+	
+	if (is_page()) {
+			
+			if ($post->post_parent) { //the page we're on has a parent
+				echo '<h2> ' . get_the_title($post->post_parent) . '<h2>'; //title
+				echo '<ul>';
+			
+				echo wp_list_pages (array('title_li' => '', 'child_of' => $post->post_parent,)); //list children of parent of post
+				echo '</ul';
+				
+			} else { //if page has no parent
+				echo '<h2>' . get_the_title($post->ID) . '</h2>';
+				echo '<ul>';
+				
+				echo wp_list_pages (array('title_li' => '', 'child_of' => $post->ID, )); //list pages that are children of this post
+				
+				echo '</ul>';
+			}
+			
+			}
+			
+			if(! (is_page())) { //if it isn't a page
+				echo '<h2>News</h2>';  //echo "Blog" as title
+				echo '<ul>';
+				
+				wp_list_categories(array('title_li' => '',)); //list categories of blog
+				
+				echo '</ul>';
+			
+			}
+}
+		//
 ?>

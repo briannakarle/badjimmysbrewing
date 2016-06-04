@@ -1,36 +1,31 @@
-<aside>
-        <?php 
+<aside id="sidebar">
+
+
+	<!-- Begin Sub-navigation -->
+	<div id="sub-navigation">
+        <?php my_subnavigation(); ?>
+    </div>
+    <!-- End Sub-navigation -->
+    
+    <!-- Begin Profound Quote -->
+    <div id="my-quote">
+    <?php if (get_post_meta($post->ID, 'quote', true)) : ?>
+    
+	   <blockquote><?php echo get_post_meta($post->ID, 'quote', true); ?></blockquote>
+       
 		
-		if (is_page()) {
-		
-		if ($post->post_parent) { //the page we're on has a parent
-		    echo '<h2> ' . get_the_title($post->post_parent) . '<h2>';
-			echo '<ul>';
-		
-			echo wp_list_pages (array('title_li' => '', 'child_of' => $post->post_parent, )); 
-			
-			echo '</ul';
-			
-		} else { 
-		    echo '<ul>';
-			
-			echo wp_list_pages (array('title_li' => '', 'child_of' => $post->ID, ));
-			
-			echo '</ul>';
-		}
-		
-		}
-		
-		if(! (is_page())) {
-			echo '<h2>Blog</h2>';
-			echo '<ul>';
-			
-		    wp_list_categories(array('title_li' => '',));
-			
-			echo '</ul>';
-		
-		}
-			?>
+	<?php endif; ?>
+	
+    </div>
+    
+    <!-- End Profound Quote -->
+    
+    
+    <!--Begin Dynamic Widgets -->
+    <div id="dynamic-widgets">
+    	<?php dynamic_sidebar(); ?>
+    </div>
+    <!-- End Dynamic Widgets -->
             <section class="asideHours">
                <h2>Taproom Hours</h2>
                <p><b>Sunday:</b> 12pm - 12am</p><p><b>Monday - Thursday:</b> 3pm - 12am</p><p><b>Friday & Saturday:</b> 12pm - 2am</p>

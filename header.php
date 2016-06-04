@@ -8,9 +8,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic|Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>navstyles.css">
-<link rel="stylesheet" type="text/css" href="navstyles.css">
-<script src="<?php bloginfo('template_directory'); ?>scripts/navscript.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/navstyles.css">
+<script src="<?php bloginfo('template_directory'); ?>/scripts/navscript.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 <!-- START WP HEAD -->
 <?php wp_head(); ?>
