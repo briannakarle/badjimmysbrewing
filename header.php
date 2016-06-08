@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title><?php bloginfo('description'); ?><?php bloginfo('name'); ?></title>
+<title><?php get_my_title_tag(); ?></title>
 <meta name="viewport" content="width=device-width"  />
 <meta name="robots" content="noindex,nofollow"  />
+<meta name="description" content="<?php echo get_the_excerpt(); ?>" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic|Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">

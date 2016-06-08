@@ -16,6 +16,7 @@
 }
 nav {
     background:black;	
+	box-shadow: 2px 2px 12px #111;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);

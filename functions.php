@@ -27,6 +27,12 @@ register_sidebars();
 add_theme_support('post-thumbnails');
 //
 
+
+//add excerpts to pages
+add_post_type_support('page', 'excerpt');
+//
+
+
 //subnavigation
 
 function my_subnavigation() {
@@ -63,5 +69,35 @@ function my_subnavigation() {
 			
 			}
 }
-		//
+//END subnavigation
+		
+		
+// Title Tag
+
+function get_my_title_tag() {
+	global $post;
+	
+	if (is_front_page()) { //if front page
+	
+		bloginfo('description'); //site tagline
+		
+	} elseif (is_page() || is_single()){ //if on a page or posting
+		
+	    the_title(); //get the page or post title	
+	} else { //for everything else
+	    bloginfo('description');	 //get site's tagline
+	}
+	
+	if ($post->post_parent) { //if a destination page
+		echo ' | ';
+		echo get_the_title($post->post_parent); //get the title of the parent page
+		
+	}
+	echo ' | ';
+	bloginfo('name'); //name of site
+	echo ' | ';
+	echo 'Seattle, WA'; //location of company
+	
+}
+//END Title Tag
 ?>
